@@ -14,7 +14,10 @@ let car = new Car('Premio');
 
 // inheritance
 class Vehicle extends Car{
-
+        start() {
+            return 'in Vehicle start ' + super.getCar();
+        }
+   
 }
 let vehicle = new Vehicle('Vehicle');
-console.log(vehicle.getCar());
+console.log(vehicle.start()); 
